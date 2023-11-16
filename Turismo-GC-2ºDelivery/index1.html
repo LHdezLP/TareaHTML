@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <link rel="stylesheet" href="css/styles-bootstraps.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="body">
+  <div id="header">
+    <img id="logo" src="img/GC-Logo.png" alt="logo">
+  </div>
+  <div class="hero-section">
+    <img id="front-image" class="img-fluid" src="img/Gran-Canaria-Roque-Nublo_08.jpg" alt="front-page">
+  </div>
+  <div class="box-content">
+    <div class="row">
+      <div class="bootstraps">
+        <div class="row">
+          <div class="col-sm-12 white-line d-flex flex-column align-items-center justify-content-center">
+
+            <div class="card my-2 me-4 left-box" style="width: 25rem;">
+              <div class="card-body">
+                <h5 class="card-title">Las Canteras</h5>
+                <h6 class="card-subtitle mb-2 text-muted fs-7">La Joya de la Capital</h6>
+                <p class="card-text text-muted fw-bold fs-8">Con más de 2 kilometros de extensión, la Playa de Las
+                  Canteras tiene el privilegio de ser una de lás mejores playas urbanas del Mundo</p>
+              </div>
+              <span class="left-arrow"></span>
+            </div>
+
+            <div class="card my-2 me-4 right-box" style="width: 25rem;">
+              <div class="card-body">
+                <h5 class="card-title">Cuevas Pintadas</h5>
+                <h6 class="card-subtitle mb-2 text-muted fs-7">Herencia Aborigen</h6>
+                <p class="card-text text-muted fw-bold fs-8">Visite las enigmaticas Cuevas Pintadas de Galdar, uno de
+                  los mayores vestigios de los antiguos pobladores de la isla</p>
+              </div>
+              <span class="right-arrow"></span>
+            </div>
+
+            <div class="card my-2 me-4 left-box" style="width: 25rem;">
+              <div class="card-body">
+                <h5 class="card-title">Mogan</h5>
+                <h6 class="card-subtitle mb-2 text-muted fs-7">La Venecia de la Macaronesia</h6>
+                <p class="card-text text-muted fw-bold fs-8">No dejes pasar la oportunidad de pasar la tarde en el
+                  encantador puerto de Mogan!</p>
+              </div>
+              <span class="left-arrow"></span>
+            </div>
+
+            <div class="card my-2 me-4 right-box" style="width: 25rem;">
+              <div class="card-body">
+                <h5 class="card-title">Maspalomas</h5>
+                <h6 class="card-subtitle mb-2 text-muted fs-7">Continente en miniatura</h6>
+                <p class="card-text text-muted fw-bold fs-8">Quedate atónito con la tremenda diversidad de los parajes
+                  naturales de Gran Canaria y visita Las Dunas de Maspalomas y su imponente Faro!</p>
+              </div>
+              <span class="right-arrow"></span>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <h5 class="left-side">Si ya te vas...</h5>
+            <h6 class="left-side mb-2 text-muted fs-7">...no olvides dejar tu reseña!</h6>
+            <p class="left-side text-muted fw-bold fs-8">Ayuda a futuros visitantes y deja tu opinión sobre los
+              municipios de nuestro pequeño paraíso.</p>
+          </div>
+          <div class="col-sm-6">
+            <div class="left-side">
+              <form id="review-form" action="index.html" onsubmit="return validateForm()">
+                <div class="mb-3 mt-3">
+                  <label for="origin" class="form-label">Lugar del que nos visitas:</label>
+                  <input type="text" class="form-control" id="origin" placeholder="Enter Origin" name="origin">
+                </div>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Nombre:</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter Nombre" name="name">
+                </div>
+                <div class="mb-3">
+                  <label for="municipio" class="form-label">Municipio:</label>
+                  <input type="text" class="form-control" id="municipio" placeholder="Enter Municipio" name="municipio">
+                  <span id="municipio-error">*Field Required</span>
+                </div>
+                <div class="mb-3">
+                  <label for="review" class="form-label">Reseña:</label>
+                  <textarea class="form-control" id="review" placeholder="Enter your review" name="review"
+                    rows="5"></textarea>
+                  <span id="review-error">*Field Required</span>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="left-side">
+            <h2>Reviews</h2>
+            <ul 
+            id="review-list">
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="js/boot-straps.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
